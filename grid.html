@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .container{
+        background: #FBEECB ;
+        width: 70%;
+        height: 500px;
+       
+    }
+    .overall{
+        display: grid;
+        /* border: 1px solid black;  */
+        margin: auto;
+        width:900px; 
+        height:400px;
+        /* grid-template-rows:one two three four five six;
+        grid-template-columns: col1 col2 col3; */
+    } 
+
+    .overall{
+         grid-template-areas:"AG1 AG2 AG2 AG2 AG2 AG3 "
+                            ".   AG4  AG4 AG5 AG5   . "
+                            ".   AG6 AG7 AG7 AG7    . "
+                            ".   .   AG8  AG8 AG9    . "
+                            ".   .   AG10 AG10  AG10  . ";
+    grid-template-columns: auto;
+    column-gap: 15px;
+    border: 1px solid #FBEECB;
+    background: #FBE7B4;
+    /* grid-template-rows: 90px 350px; */
+    /* grid-gap: 20px; */
+    }  
+    /* .emp{
+        grid-area: unset;
+    } */
+    .para{
+        font-size: 30px;
+        margin-left: 400px;
+        padding:20px;
+    }
+    .AG1{
+        grid-area: AG1;
+        background:#71DAD3;
+       
+
+    }
+    .AG2{
+        grid-area: AG2;
+        background:#FBE7B4;
+    }
+    .AG3{
+        grid-area: AG3;
+        background: #71DAD3;
+    }
+    .AG4{
+        grid-area: AG4;
+        background: #EE9E9D;
+    }
+    .AG5{
+        grid-area: AG5;
+        background: #EE9E9D;
+    }
+    .AG6{
+        grid-area: AG6;
+        background: #F09671;
+    }
+    .AG7{
+        grid-area: AG7;
+        background:#F6D784;
+    }
+    .AG8{
+        grid-area: AG8;
+        background: #EE9E9D;
+       
+    }
+    .AG9{
+        grid-area: AG9;
+        background: #EE9E9D;
+       
+    }
+    .AG10{
+        grid-area: AG10;
+        background: #EB9FC3;
+    }
+
+    .overall div{
+        border-radius: 4px;
+        border: none;
+        text-align: center;
+        justify-content: center;
+        padding: 30px;
+    } 
+  
+</style>
+<body>
+<!-- <div class="container"> -->
+    <!-- <div class="para"></div> -->
+     <p class="para">The 10 column complex nested grid AG test</p>
+        
+        <div class="overall">
+             <div class="AG1">AG 1</div>
+            <div class="AG2">AG 2</div>
+            <div class="AG3">AG 3</div>
+
+            <div class="AG4">AG 4</div>
+            <div class="AG5">AG 5</div>
+            <div class="AG6">AG 6</div>
+            
+            <div class="AG7">AG 7</div>
+            <div class="AG8">AG 8</div>
+            <div class="AG9">AG 9</div>
+            <div class="AG10">AG 10</div>
+        </div>
+    <!-- </div> -->
+</div>
+</body>
+</html>
